@@ -19,3 +19,16 @@ with open("data/sales.csv", "r") as file:
 
     for row in reader:
         print(row)
+
+print("\nEXERCISE 3")
+
+with open("data/sales.csv", "r") as file:
+    reader = csv.reader(file)
+
+    header = next(reader)
+
+    print("Header:")
+    print(header)
+
+    for row in reader:
+        print(row)        
